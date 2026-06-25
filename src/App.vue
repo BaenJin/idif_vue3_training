@@ -6,6 +6,7 @@ import gat        from '../resources/갓.png'
 import hunmin     from '../resources/훈민정음.jpg'
 import moonjar    from '../resources/백자달항아리.jpeg'
 import seokguram  from '../resources/석굴암.jpg'
+import hanbok  from '../resources/한복.jpg'
 
 const current = ref(0)
 
@@ -62,6 +63,7 @@ const items = [
   },
   {
     id: 6,
+    img: hanbok,
     char: '衣',
     name: '한복',
     nameEn: 'Hanbok · Traditional Dress',
@@ -112,7 +114,7 @@ const switchTo = (mode: 'login' | 'signup' | 'forgot') => {
 }
 
 const handleLogin = () => {
-  if (loginEmail.value === 'dmswls1089@idif.co.kr' && loginPassword.value === '1') {
+  if (loginEmail.value === 'b@1' && loginPassword.value === '1') {
     closeModal()
   } else {
     loginError.value = '이메일 또는 비밀번호가 올바르지 않습니다.'
